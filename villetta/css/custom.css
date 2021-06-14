@@ -1,0 +1,334 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: mostra-nuova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/* class for dev */
+.ttt{
+    border: solid 3px red;
+}
+
+
+.lead {
+    color: #010015;
+    font-size: x-large;
+    padding-top: 2rem; /* padding for smaller screen sizes */
+}
+
+@media (min-width: 544px) {
+  .lead {padding-top: 0}  /* no padding for bigger screen sizes */
+}
+
+
+.menu-burger {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu-burger-close {
+    height: 5rem
+}
+
+ul.listing {
+    font-size: large;
+    color: #010015;
+
+}
+
+.lemon-navbar {
+    background-color: #03002E;;
+
+}
+
+.int {
+    color: #08007B;
+    margin-top: 10px;
+    font-size: larger;
+    text-decoration: none;
+}
+.int:hover {
+    color: #0d00c8;
+}
+
+ul.modal-nav {
+    display: flex;
+    align-items: center;
+}
+
+.men {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    padding: 5px;
+    background-color: rgb(255, 255, 255, 0);
+
+}
+
+.line {
+    border-bottom: 3px solid;
+    border-bottom-color: #060061;
+    width: 10%;
+}
+
+.inv {
+    color: #0d00c8;
+    padding-top: 2rem;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+
+.hr-carousel {
+    border-top: 3px solid #ffffff;
+    background-color: #ffffff;
+    width: 20%;
+}
+
+
+a.carousel {
+    font-size: 38px;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 7px;
+}
+a.carousel:hover {
+    color: #0d00c8;
+}
+
+.brand {
+    font-family: braisetto, script;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8vh;
+    color: #ffffff;
+
+}
+
+
+h1.navbar-brand {
+    font-family: braisetto, script;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.5rem;
+    padding-left: 2rem;
+}
+
+h1.navbar-brand a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h2 {
+    color: #060061;
+    font-weight: 700;
+    font-size: 2.2rem;
+    /*text-decoration: underline;*/
+
+}
+
+.header-muted {
+    color: #08007B;
+    opacity: 1;
+}
+
+.learn {
+    height: 40vh;
+    background-color: #03002e;
+    padding: 0 0 0 0;
+}
+
+
+.colors {
+    color: #010015;
+    color: #03002e;
+    color: #050048;
+    color: #060061;
+    color: #08007B;
+    color: #0d00c8;
+}
+
+.modal-header {
+    background-color: #050048;
+    color: white;
+    border-bottom: 0;
+    height: 15vh;
+
+}
+
+.modal-content {
+    background-color: #050048;
+
+}
+
+.btn-close-white {
+    position: fixed;
+    right: 2.5rem;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.nav-grid{
+    display: flex;
+    /*height: 15vh;*/
+}
+
+
+
+.menu-btns:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+.inside {
+    background-color: #03002e;
+}
+
+.w-100-img {
+    margin-top: 12vh;
+}
+
+
+.modal-body {
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center; /* center items horizontally, in this case */
+    /*justify-content: center;*/
+    /*display: flex;*/
+    font-size: xx-large;
+}
+
+.carousel-content {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 40vh;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.nav-link {
+    color: #ffffff;
+    font-family: mostra-nuova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+.full {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+
+
+    /*object-fit: cover;*/
+}
+
+hr {
+    color: #08007B;
+}
+
+.container {
+    margin-top: 8vh;
+}
+
+#main-carousel .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#main-carousel .carousel-item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, .5)
+    );
+    width: 100vw;
+    top: 0;
+    height: 100vh;
+}
+
+section {
+    margin-top: 12vh;
+}
+
+
+/*products*/
+
+.invert {
+    background-color: #03002e;
+    margin-top: 5vh;
+    padding-top: 2vh;
+    height: 100vh;
+}
+
+.invert h2 {
+    color: #ffffff;
+}
+
+.invert-lead, .int-invert {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.invert-line {
+    border-bottom: 3px solid;
+    border-bottom-color: #ffffff;
+    width: 10%;
+}
+
+
+h2.product {
+    width: 100%;
+    text-align: center;
+}
