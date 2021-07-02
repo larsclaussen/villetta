@@ -17,15 +17,24 @@ body {
 
 .lead {
     color: #010015;
-    font-size: x-large;
+    
     padding-top: 2rem; /* padding for smaller screen sizes */
 }
 
 @media (min-width: 544px) {
-  .lead {padding-top: 0}  /* no padding for bigger screen sizes */
+  .lead {padding-top: 0;
+    font-size: x-large;
+}  /* no padding for bigger screen sizes */
 }
 
-
+.clean-fair{
+    max-width: 90vw;
+}
+@media (min-width: 544px) {
+    .clean-fair{
+        max-width: 450px;
+    }
+}
 .menu-burger {
   display: flex;
   align-items: center;
@@ -75,7 +84,7 @@ ul.modal-nav {
 
 .line {
     border-bottom: 3px solid;
-    border-bottom-color: #060061;
+    border-bottom-color: #6d75a0;
     width: 10%;
 }
 
@@ -131,7 +140,7 @@ h1.navbar-brand a{
 }
 
 h2 {
-    color: #060061;
+    color: #6d75a0;
     font-weight: 700;
     font-size: 2.2rem;
     /*text-decoration: underline;*/
@@ -262,8 +271,6 @@ h2 {
     object-fit: cover;
     object-position: center;
     overflow: hidden;
-
-
     /*object-fit: cover;*/
 }
 
@@ -308,6 +315,8 @@ section {
     margin-top: 5vh;
     padding-top: 2vh;
     height: 100vh;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
 }
 
 .invert h2 {

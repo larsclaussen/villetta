@@ -1,0 +1,14 @@
+@media (min-width: 600px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 920px;
+    }
+}
+
+b{
+    font-weight: 400;
+}
