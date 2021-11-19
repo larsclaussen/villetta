@@ -1,176 +1,175 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.typekit.net/fkj7nfy.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <title>Villetta Maroli</title>
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/bootstrap-overwrite.css">
 </head>
+
 <body>
 
-<main>
-  <div class="men">
-    <nav>
-      <div class="container-fluid nav-grid">
-        <div class="w-50">
-          <h1 class="navbar-brand"><a href="index.html">Villetta Maroli</a>
-          </h1>
+  <main>
+    <div class="men">
+      <nav>
+        <div class="container-fluid nav-grid fixed-top navbar_top_container">
+          <div class="">
+            <h1 class="navbar-brand"><a href="index.html">Villetta Maroli</a>
+            </h1>
+          </div>
+          <div class="menu-burger">
+            <button type="button" class="navbar-toggler menu-btns" data-bs-toggle="modal" data-bs-target="#menu-modal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="whitesmoke" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="w-50 menu-burger">
-          <button type="button" class="navbar-toggler menu-btns"
-                  data-bs-toggle="modal"
-                  data-bs-target="#menu-modal">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                 fill="white" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </nav>
-  </div>
+      </nav>
+    </div>
 
-    <div class="modal fade" id="menu-modal" tabindex="-1"
-         aria-labelledby="menu-modalLabel" style="display: none;"
-         aria-hidden="true">
+    <div class="modal fade" id="menu-modal" tabindex="-1" aria-labelledby="menu-modalLabel" style="display: none;"
+      aria-hidden="true">
       <div class="modal-dialog modal-fullscreen">
 
         <div class="modal-content">
-          <div class="w-100 menu-burger menu-burger-close">
-            <button type="button" data-bs-dismiss="modal"
-                    class="btn-close btn-close-white menu-btns"
-                    aria-label="Close"></button>
+          <div class="navbar_top_container">
+            <div class="">
+              <h1 class="navbar-brand"><a href="index.html">Villetta Maroli</a>
+            </div>
+            <div class="menu-burger">
+              <button type="button" data-bs-dismiss="modal" class="btn-close btn-close-white menu-btns"
+                aria-label="Close"></button>
+            </div>
           </div>
           <div class="modal-body">
             <ul class="navbar-nav mr-auto modal-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="about/index.html">About</a>
-              </li>
               <li class="nav-item">
                 <a class="nav-link" href="products/index.html">Products</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Find & Buy</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="about/index.html">About</a>
               </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="findandbuy/index.html">Find &amp; Buy</a>
+            </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact/index.html">Contact</a>
               </li>
+              
             </ul>
-            <object data="images/tree.svg" width="70" height="250"></object>
+            <object class="navbar-tree" data="images/tree.svg"></object>
           </div>
         </div>
       </div>
     </div>
 
 
-  <div id="main-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="main-carousel" class="carousel slide" data-bs-ride="carousel">
 
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/making.JPG" class="d-block w-100"
-             alt="Image Description">
+      <div class="carousel-inner">
 
-      </div>
-      <div class="carousel-caption carousel-content">
-        <div class="svg-container">
-          <object data="images/tree.svg" width="100%" height="100%"
-                  class="svg-content"></object>
+
+        <div class="carousel-item active">
+          <img src="images/slides/LimonEnArmonHandinHand.jpg" class="d-block w-100" alt="POW Logo">
+
+          <a class="active carousel" aria-current="page" href="about/index.html">
+            <div class="carousel-caption carousel-content">
+              <div class="svg-container">
+
+              </div>
+              <div class="carousel-caption-dark caption-front-page">
+                <h1 class="landing"></h1>
+                <hr class="hr-carousel" />
+                <h1 class="landing">OUR LIQUEUR</h1>
+              </div>
+            </div>
+          </a>
         </div>
-        <h1> GOOD GROVES </h1>
-        <hr class="hr-carousel">
-        <a class="active carousel" aria-current="page"
-           href="about/index.html">welcome</a>
-      </div>
-
-      <div class="carousel-item">
-        <img src="images/try.JPG" class="d-block w-100" alt="POW Logo">
-
-        <div class="carousel-caption carousel-content">
-          <div class="svg-container">
-            <object data="images/tree.svg" width="100%" height="100%"
-                    class="svg-content"></object>
+        <div class="carousel-item ">
+          <img src="images/slides/Slide_1_Good_Groves_welcome.jpeg" class="d-block w-100" alt="Image Description">
+          <div class="carousel-caption carousel-content">
+            <div class="svg-container">
+              <!-- <object data="images/slides/Aranchello.jpg" width="100%" height="100%"
+                  class="svg-content"></object> -->
+            </div>
+            <h1 class="landing"> SUSTAINABLE &AMP; FAIR </h1>
+            <hr class="hr-carousel">
+            <a class="carousel" aria-current="page" href="about/index.html">our story</a>
           </div>
-          <h1 class="landing"> CELLOS </h1>
-          <hr class="hr-carousel">
-          <a class="active carousel" aria-current="page"
-             href="products/index.html">& syrup</a>
+
         </div>
-      </div>
+        <div class="carousel-item">
+          <img src="images/slides/Slide_3_Bman_yellow.jpeg" class="d-block w-100" alt="POW Logo">
 
-      <div class="carousel-item">
-        <img src="images/try.JPG" class="d-block w-100" alt="POW Logo">
-
-        <div class="carousel-caption carousel-content">
-          <div class="svg-container">
-            <object data="images/tree.svg" width="100%" height="100%"
-                    class="svg-content"></object>
+          <div class="carousel-caption carousel-content">
+            <div class="svg-container">
+              <!-- <object data="images/tree.svg" width="100%" height="100%"
+                    class="svg-content"></object> -->
+            </div>
+            <h1 class="landing"> BAR &amp; RESTAURANT </h1>
+            <hr class="hr-carousel">
+            <a class=" carousel" aria-current="page" href="products/index.html">where to drink</a>
           </div>
-          <h1 class="landing"> BAR & CLUB</h1>
-          <hr class="hr-carousel">
-          <a class="active carousel" aria-current="page"
-             href="about/index.html">heartbeats</a>
         </div>
-      </div>
 
-      <div class="carousel-item">
-        <img src="images/try.JPG" class="d-block w-100" alt="POW Logo">
+        <div class="carousel-item">
+          <img src="images/slides/Slide_4_Get_creative_mix_it_up!.jpeg" class="d-block w-100" alt="POW Logo">
 
-        <div class="carousel-caption carousel-content">
-          <div class="svg-container">
-            <object data="images/tree.svg" width="100%" height="100%"
-                    class="svg-content"></object>
+          <div class="carousel-caption carousel-content">
+            <div class="svg-container">
+              <!-- <object data="images/tree.svg" width="100%" height="100%"
+                    class="svg-content"></object> -->
+            </div>
+            <h1 class="landing"> GET CREATIVE</h1>
+            <hr class="hr-carousel">
+            <a class="active carousel" aria-current="page" href="about/index.html">&amp; mix it up</a>
           </div>
-          <h1 class="landing"> GET CREATIVE</h1>
-          <hr class="hr-carousel">
-          <a class="active carousel" aria-current="page"
-             href="about/index.html">& mix it up</a>
         </div>
-      </div>
 
-      <div class="carousel-item">
-        <img src="images/try.JPG" class="d-block w-100" alt="POW Logo">
+        <div class="carousel-item">
+          <img src="images/slides/Slide_5_Orchards_come_visit.jpeg" class="d-block w-100" alt="POW Logo">
 
-        <div class="carousel-caption carousel-content">
-          <div class="svg-container">
-            <object data="images/tree.svg" width="100%" height="100%"
-                    class="svg-content"></object>
+          <div class="carousel-caption carousel-content">
+            <div class="svg-container">
+              <!-- <object data="images/tree.svg" width="100%" height="100%"
+                    class="svg-content"></object> -->
+            </div>
+            <h1 class="landing"> ORCHARDS</h1>
+            <hr class="hr-carousel">
+            <a class="active carousel" aria-current="page" href="about/index.html">come visit!</a>
           </div>
-          <h1 class="landing">ORCHARDS</h1>
-          <hr class="hr-carousel">
-          <a class="active carousel" aria-current="page"
-             href="about/index.html">come visit</a>
         </div>
-      </div>
-      <button class="carousel-control-prev" type="button"
-              data-bs-target="#main-carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button"
-              data-bs-target="#main-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
 
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#main-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
     </div>
 
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
