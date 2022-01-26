@@ -26,7 +26,6 @@ body {
 
 .lead {
     color: #010015;
-
     padding-top: 2rem; /* padding for smaller screen sizes */
 }
 
@@ -200,13 +199,8 @@ h2 {
 } */
 
 .cocktail-modal-header {
-    /* background-color: #03002e; */
-    /* background-color: #03002e95; */
     background-color: #465990;
     border-bottom: 0.5px solid #03002e;
-    /* color: white;
-    border-bottom: 0;
-    height: 15vh; */
 }
 
 
@@ -231,8 +225,9 @@ h2 {
 }
 
 .btn-close-white-menu {
-    position: fixed;
-    right: 2.5rem;
+    position: relative;
+    right: 4vh;
+    top: 2vh;
 }
 
 .navbar-dark .navbar-toggler {
@@ -296,7 +291,8 @@ h2 {
     padding-top: 2em;
     padding-left: 2em;
 }
-.menu-modal-body .recipe{
+
+.menu-modal-body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; /* establish flex container */
@@ -310,8 +306,6 @@ h2 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; /* center items horizontally, in this case */
-    /*justify-content: center;*/
-    /*display: flex;*/
     font-size: xx-large;
     font-variant: petite-caps;
     padding-top: 20vh;
@@ -469,6 +463,11 @@ section {
     max-height: 30vh;
 }
 
+.tree-container {
+       display: flex;   
+       justify-content: center; 
+}
+
 .after-diner {
     height: 40vh;
     margin-bottom: 4em;
@@ -566,12 +565,6 @@ section {
 .invert {
     background-color: #03002e;
     height: 100vh;
-
-    /* margin-top: 12vh;
-    padding-top: 2vh;
-    
-    padding-right: var(--bs-gutter-x,.75rem);
-    padding-left: var(--bs-gutter-x,.75rem);*/
 }
 
 .invert-lead,
