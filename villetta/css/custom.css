@@ -16,6 +16,9 @@ body {
     color: whitesmoke;
 }
 
+.modal-open {
+    padding-right: 0px !important;
+}
 /* class for dev */
 .ttt {
     border: solid 3px red;
@@ -136,9 +139,17 @@ a.carousel:hover {
     font-family: braisetto, script;
     font-style: normal;
     font-weight: 700;
-    font-size: 8vh;
+    font-size: 6vh;
     color: whitesmoke;
 }
+
+.modal-title {
+    /* font-family: braisetto, script; */
+    /* font-weight: 500;
+    font-size: 6vh; */
+    color: whitesmoke;
+}
+
 
 h1.navbar-brand {
     font-family: braisetto, script;
@@ -181,18 +192,45 @@ h2 {
     color: #03002e;
 }
 
-.modal-header {
+/* .modal-header {
     background-color: #03002e;
     color: white;
     border-bottom: 0;
     height: 15vh;
+} */
+
+.cocktail-modal-header {
+    /* background-color: #03002e; */
+    /* background-color: #03002e95; */
+    background-color: #465990;
+    border-bottom: 0.5px solid #03002e;
+    /* color: white;
+    border-bottom: 0;
+    height: 15vh; */
 }
 
-.modal-content {
+
+/* .modal-content {
+    background-color: #03002e;
+} */
+
+.cocktail-header{
+    color:  #03002e;
+}
+.menu-modal-content {
     background-color: #03002e;
 }
 
-.btn-close-white {
+.cocktail-modal-content {
+    background-color: white;
+    border: none;
+}
+
+.cocktail-modal-body {
+    color: #010015;
+}
+
+.btn-close-white-menu {
     position: fixed;
     right: 2.5rem;
 }
@@ -207,6 +245,8 @@ h2 {
     display: -ms-flexbox;
     display: flex;
     height: 12vh;
+    padding-right: 0px !important;
+
 }
 .navbar_top_container {
     display: -webkit-box;
@@ -243,7 +283,20 @@ h2 {
     align-items: center;
 }
 
-.modal-body {
+.ingredients{
+    padding-top: 2em;
+}
+
+.recipe{
+    padding-bottom: 2rem;
+    border-bottom: 0.5px solid #03002e; 
+}
+
+.recipe-details{
+    padding-top: 2em;
+    padding-left: 2em;
+}
+.menu-modal-body .recipe{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; /* establish flex container */
@@ -322,6 +375,22 @@ h2 {
     -ms-flex-align: center;
     align-items: center;
 }
+
+.cocktails-carousel-svgholder {
+    height: 80vh;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
 object {
     max-height: 85%;
     width: auto !important;
@@ -394,10 +463,17 @@ section {
     margin-top: 12vh;
 }
 
+
 .navbar-tree {
     max-width: 200px;
     max-height: 30vh;
 }
+
+.after-diner {
+    height: 40vh;
+    margin-bottom: 4em;
+}
+
 /*products*/
 #main-carousel-products-limoncello {
     height: 100vh;
