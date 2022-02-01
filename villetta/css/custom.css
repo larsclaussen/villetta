@@ -255,6 +255,9 @@ h2 {
 .body-whitesmoke {
     background-color: whitesmoke;
 }
+.bi-arrow-return-right{
+    fill: #465990;
+}
 
 .menu-btns:focus {
     outline: none;
@@ -642,30 +645,46 @@ h2.product {
     max-width: 100vw;
     overflow: hidden;
 }
-
-.contact-information-7-col {
+.head-holder{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20vh;
+    margin-bottom: 2rem;
+}
+.contact-information-6-col {
+    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     background-color: whitesmoke;
     color: black;
-    margin-top: 20vh;
-    background-image: url(../images/tree.svg);
-    background-size: 80vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 80vh;
-    text-align: center;
+    
+    
+    height: 60vh;
+    text-align: left;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+   
+}
+
+.contact-left{
+    align-items: flex-start;
+   
+}
+
+.contact-right{
+    background-image: url(../images/tree.svg);
+    padding-top: 8px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .contact-information-7-col form {
@@ -820,8 +839,8 @@ h2.product {
     max-width: 400px;
 }
 #subscribe_button {
-    color: #465990;
-    background-color: transparent;
+    color: whitesmoke;
+    background-color: #465990;
 
     border: 2px solid #465990;
     width: 80%;
